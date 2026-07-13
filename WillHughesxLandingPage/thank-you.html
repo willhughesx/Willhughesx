@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanks — WillHughesX</title>
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo">WILLHUGHES<span class="nav__logo-accent">X</span></a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" style="padding-top: clamp(96px, 16vw, 168px); text-align:center;">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <p class="eyebrow">Message Received</p>
+      <h1 class="hero__headline" style="font-size: clamp(36px, 6vw, 56px);">Thanks — I've got it.</h1>
+      <p class="hero__sub">Your project details have come through. I'll get back to you shortly with next steps and how it could work.</p>
+      <div class="hero__actions">
+        <a href="/" class="btn btn--primary">Back to homepage</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="/" class="nav__logo">WILLHUGHES<span class="nav__logo-accent">X</span></a>
+    <p class="footer__copy">© <span id="year"></span> WillHughesX. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
