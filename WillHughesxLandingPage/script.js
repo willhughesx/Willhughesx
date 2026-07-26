@@ -1,4 +1,10 @@
 // ==========================================================
+// SHARED: motion / input capability checks
+// ==========================================================
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const hasFinePointer = window.matchMedia('(pointer: fine)').matches;
+
+// ==========================================================
 // NAV: mobile menu toggle
 // ==========================================================
 const navToggle = document.getElementById('nav-toggle');
@@ -20,29 +26,29 @@ if (navToggle && navLinks) {
 }
 
 // ==========================================================
-// FAQ: accordion behaviour
+// SCROLL REVEAL: staggered blur/fade as sections enter view.
+// JS discovers and tags targets (rather than authoring
+// data-reveal in HTML) so content still renders if JS fails.
 // ==========================================================
-document.querySelectorAll('.faq-item__q').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+const revealGroups = [
+  '.problem__flows > .problem-flow',
+  '.bento > .bento-card, .bento--demos > .demo-card',
+  '.work .project',
+  '.testimonial',
+  '.behind .system-flow__step',
+  '.process__list > .process__item',
+  '.about__inner, .about__card',
+  '.contact__card',
+];
 
-    // Close all other FAQ items (single-open accordion)
-    document.querySelectorAll('.faq-item__q').forEach((other) => {
-      other.setAttribute('aria-expanded', 'false');
-    });
-
-    btn.setAttribute('aria-expanded', String(!isOpen));
+const revealTargets = [];
+revealGroups.forEach((selector) => {
+  document.querySelectorAll(selector).forEach((el, i) => {
+    el.setAttribute('data-reveal', '');
+    el.style.setProperty('--i', i);
+    revealTargets.push(el);
   });
 });
-
-// ==========================================================
-// SCROLL REVEAL: fade/slide sections in as they enter view
-// ==========================================================
-const revealTargets = document.querySelectorAll(
-  '.work .project, .testimonial__inner, .services__grid, .process__item, .automation__inner, .faq-item, .contact__inner'
-);
-
-revealTargets.forEach((el) => el.setAttribute('data-reveal', ''));
 
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver(
@@ -64,6 +70,41 @@ if ('IntersectionObserver' in window) {
 }
 
 // ==========================================================
+// SPOTLIGHT: subtle cursor-following glow (desktop, motion-safe only)
+// ==========================================================
+const spotlight = document.getElementById('spotlight');
+if (spotlight && hasFinePointer && !prefersReducedMotion) {
+  let rafId = null;
+  window.addEventListener('mousemove', (e) => {
+    if (rafId) return;
+    rafId = requestAnimationFrame(() => {
+      spotlight.style.setProperty('--spot-x', `${e.clientX}px`);
+      spotlight.style.setProperty('--spot-y', `${e.clientY}px`);
+      spotlight.classList.add('is-active');
+      rafId = null;
+    });
+  });
+}
+
+// ==========================================================
+// MAGNETIC BUTTONS: buttons drift slightly toward the cursor
+// (desktop, motion-safe only)
+// ==========================================================
+if (hasFinePointer && !prefersReducedMotion) {
+  document.querySelectorAll('.btn').forEach((btn) => {
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      btn.style.transform = `translate(${x * 0.12}px, ${y * 0.25}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = '';
+    });
+  });
+}
+
+// ==========================================================
 // FOOTER: current year
 // ==========================================================
 const yearEl = document.getElementById('year');
@@ -80,7 +121,7 @@ if (nav) {
     if (window.scrollY > 8) {
       nav.style.borderBottomColor = 'rgba(255,255,255,0.14)';
     } else {
-      nav.style.borderBottomColor = 'rgba(255,255,255,0.08)';
+      nav.style.borderBottomColor = 'rgba(255,255,255,0.07)';
     }
   });
 }
