@@ -1,45 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+</script>
+<meta property="og:title" content="WillHughesX | Turn Clicks Into Clients">
+<meta property="og:description" content="Focused landing pages and automated follow-up systems that help coaching businesses generate more qualified enquiries.">
+<meta property="og:image" content="https://willhughesx.com/CarrdImage.png">
+<meta property="og:url" content="https://willhughesx.com">
+<meta property="og:image" content="https://willhughesx.com/x-card-final-v2.png">
+<meta name="twitter:image" content="https://willhughesx.com/x-card-final-v2.png">
+<meta property="og:type" content="website">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
+<meta property="og:image:alt" content="WillHughesX conversion systems for coaching businesses">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WillHughesX | Turn Clicks Into Clients">
+<meta name="twitter:description" content="Focused landing pages and automated follow-up systems that help coaching businesses generate more qualified enquiries.">
+<meta name="twitter:image" content="https://willhughesx.com/CarrdImage.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LeadWatchX — Know when your client websites are losing enquiries</title>
-<meta name="description" content="LeadWatchX monitors your client websites' enquiry paths and tells you the moment one starts leaking leads. A product mockup by WillHughesX.">
-<meta name="robots" content="noindex">
+
+<title>WillHughesX — Turn Clicks Into Clients</title>
+<meta name="description" content="I build focused landing pages and automated follow-up systems that help coaching businesses turn more clicks into qualified enquiries.">
+
+<!-- ==========================================================
+     SOCIAL SHARE IMAGE
+     social-card.png lives in the repo root — replace the file
+     any time, filename can stay the same.
+     ========================================================== -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="../styles.css">
-<link rel="stylesheet" href="leadwatchx.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Skip link for accessibility -->
 <a class="skip-link" href="#main">Skip to content</a>
 
+<!-- Decorative texture layers: grain + cursor spotlight + dot grid.
+     All aria-hidden, purely visual, no content. -->
 <div class="grain" aria-hidden="true"></div>
 <div class="spotlight" id="spotlight" aria-hidden="true"></div>
 
 <!-- ==========================================================
-     NAV — same structural pattern as the WillHughesX homepage nav,
-     re-branded for the product.
+     NAVIGATION
      ========================================================== -->
 <header class="nav" id="nav">
   <div class="nav__inner">
-    <a href="#top" class="nav__logo lwx-nav__brand">
-      LeadWatch<span class="nav__logo-accent">X</span>
-      <span class="lwx-nav__by">by WillHughesX</span>
-    </a>
+    <a href="#top" class="nav__logo">WILLHUGHES<span class="nav__logo-accent">X</span></a>
 
     <nav class="nav__links" id="nav-links">
-      <a href="#top" data-lwx-nav="overview">Overview</a>
-      <a href="#sites" data-lwx-nav="overview">Sites</a>
-      <a href="#view-detail" data-lwx-open="apex">Alerts</a>
+      <a href="#work">Work</a>
+      <a href="#build">What I Build</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
     </nav>
 
     <div class="nav__actions">
-      <a href="../index.html" class="lwx-nav__back">← WillHughesX</a>
+      <a href="#contact" class="btn btn--primary btn--small"><span>Get a Free Conversion Breakdown</span></a>
       <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -50,241 +68,513 @@
 <main id="main">
 
   <!-- ==========================================================
-       VIEW 1 — AGENCY OVERVIEW
+       1. HERO
        ========================================================== -->
-  <section class="lwx-view is-active" id="view-overview">
-
-    <div class="lwx-header" id="top">
-      <div class="lwx-header__bg" aria-hidden="true"></div>
-      <div class="container lwx-header__inner">
-        <p class="eyebrow eyebrow--center"><span class="eyebrow__dot" aria-hidden="true"></span>Agency Dashboard · Demo Data</p>
-        <h1 class="lwx-header__title">LeadWatch<span class="text-accent">X</span></h1>
-        <p class="lwx-header__sub">Know when your client websites are losing enquiries.</p>
-        <p class="lwx-header__meta">4 client websites monitored</p>
-      </div>
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__grid"></div>
+      <div class="hero__aurora hero__aurora--1"></div>
+      <div class="hero__aurora hero__aurora--2"></div>
     </div>
-
-    <div class="container">
-
-      <!-- Summary cards -->
-      <div class="lwx-summary">
-        <div class="lwx-stat">
-          <span class="lwx-stat__value">4</span>
-          <span class="lwx-stat__label">Sites Monitored</span>
-        </div>
-        <div class="lwx-stat lwx-stat--green">
-          <span class="lwx-stat__value">2</span>
-          <span class="lwx-stat__label">Healthy</span>
-        </div>
-        <div class="lwx-stat lwx-stat--amber">
-          <span class="lwx-stat__value">1</span>
-          <span class="lwx-stat__label">Warning</span>
-        </div>
-        <div class="lwx-stat lwx-stat--red">
-          <span class="lwx-stat__value">1</span>
-          <span class="lwx-stat__label">Critical</span>
-        </div>
-        <div class="lwx-stat">
-          <span class="lwx-stat__value">44</span>
-          <span class="lwx-stat__label">Enquiries This Week</span>
-        </div>
+    <div class="container hero__inner">
+      <p class="eyebrow eyebrow--center"><span class="eyebrow__dot" aria-hidden="true"></span>Conversion Systems For Coaching Businesses</p>
+      <h1 class="hero__headline">Turn Clicks<br>Into <span class="text-accent">Clients</span></h1>
+      <p class="hero__sub">I build focused landing pages and automated follow-up systems that help coaching businesses generate more qualified enquiries.</p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary btn--lg"><span>Get a Free Conversion Breakdown</span></a>
+        <a href="#work" class="btn btn--ghost btn--lg"><span>View My Work</span></a>
       </div>
 
-      <!-- Site cards -->
-      <div class="lwx-sites" id="sites">
-
-        <div class="lwx-site-card">
-          <div class="lwx-site-card__top">
-            <div>
-              <h3 class="lwx-site-card__name">Hartwell Legal</h3>
-              <span class="lwx-site-card__industry">Family &amp; Property Law</span>
-            </div>
-            <span class="lwx-status lwx-status--healthy"><span class="lwx-status__dot" aria-hidden="true"></span>Healthy</span>
-          </div>
-          <p class="lwx-site-card__stat"><b>14</b> successful enquiries this week</p>
-          <p class="lwx-site-card__msg">Conversion path operating normally.</p>
+      <div class="flow-diagram flow-diagram--hero" aria-label="How a visitor becomes a qualified enquiry">
+        <div class="flow-diagram__node">
+          <span class="flow-diagram__dot" aria-hidden="true"></span>
+          <span class="flow-diagram__label">Traffic</span>
         </div>
-
-        <button class="lwx-site-card lwx-site-card--clickable" type="button" data-lwx-open="apex" aria-controls="view-detail">
-          <div class="lwx-site-card__top">
-            <div>
-              <h3 class="lwx-site-card__name">Apex Roofing</h3>
-              <span class="lwx-site-card__industry">Roofing &amp; Exteriors</span>
-            </div>
-            <span class="lwx-status lwx-status--critical"><span class="lwx-status__dot" aria-hidden="true"></span>Critical</span>
-          </div>
-          <p class="lwx-site-card__stat"><b>11</b> successful enquiries this week</p>
-          <p class="lwx-site-card__msg">Possible submission failure detected.</p>
-          <span class="lwx-site-card__cta">View details <span aria-hidden="true">→</span></span>
-        </button>
-
-        <div class="lwx-site-card">
-          <div class="lwx-site-card__top">
-            <div>
-              <h3 class="lwx-site-card__name">Northline Fitness</h3>
-              <span class="lwx-site-card__industry">Gym &amp; Personal Training</span>
-            </div>
-            <span class="lwx-status lwx-status--warning"><span class="lwx-status__dot" aria-hidden="true"></span>Warning</span>
-          </div>
-          <p class="lwx-site-card__stat"><b>8</b> successful enquiries this week</p>
-          <p class="lwx-site-card__msg">Unusual form drop-off detected.</p>
+        <span class="flow-diagram__line" aria-hidden="true"></span>
+        <div class="flow-diagram__node">
+          <span class="flow-diagram__dot" aria-hidden="true"></span>
+          <span class="flow-diagram__label">Landing Page</span>
         </div>
-
-        <div class="lwx-site-card">
-          <div class="lwx-site-card__top">
-            <div>
-              <h3 class="lwx-site-card__name">Oak &amp; Co Accountants</h3>
-              <span class="lwx-site-card__industry">Accounting &amp; Tax</span>
-            </div>
-            <span class="lwx-status lwx-status--healthy"><span class="lwx-status__dot" aria-hidden="true"></span>Healthy</span>
-          </div>
-          <p class="lwx-site-card__stat"><b>11</b> successful enquiries this week</p>
-          <p class="lwx-site-card__msg">Conversion path operating normally.</p>
+        <span class="flow-diagram__line" aria-hidden="true"></span>
+        <div class="flow-diagram__node">
+          <span class="flow-diagram__dot" aria-hidden="true"></span>
+          <span class="flow-diagram__label">Qualification</span>
         </div>
-
+        <span class="flow-diagram__line" aria-hidden="true"></span>
+        <div class="flow-diagram__node">
+          <span class="flow-diagram__dot" aria-hidden="true"></span>
+          <span class="flow-diagram__label">Follow-Up</span>
+        </div>
+        <span class="flow-diagram__line" aria-hidden="true"></span>
+        <div class="flow-diagram__node flow-diagram__node--accent">
+          <span class="flow-diagram__dot" aria-hidden="true"></span>
+          <span class="flow-diagram__label">Qualified Enquiry</span>
+        </div>
       </div>
-
-      <p class="lwx-header__meta" style="text-align:center; margin-bottom: var(--space-10);">All companies shown are fictional demonstration accounts.</p>
-
     </div>
   </section>
 
   <!-- ==========================================================
-       VIEW 2 — CLIENT DETAIL (Apex Roofing)
+       2. THE PROBLEM
        ========================================================== -->
-  <section class="lwx-view" id="view-detail">
-    <div class="container" style="padding-top: var(--space-9);">
-
-      <div class="lwx-detail-header">
-        <button class="lwx-back" type="button" data-lwx-close aria-controls="view-overview">← Overview</button>
+  <section class="problem" id="problem">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__index">01</span>
+        <p class="eyebrow">The Problem</p>
       </div>
+      <h2 class="section-title">Most websites lose leads in the same two places</h2>
+      <p class="problem__intro">A good ad or post gets someone to click. What happens on the page — and what happens after they enquire — decides whether that click turns into a client.</p>
 
-      <div class="lwx-detail-title-row" style="margin-bottom: var(--space-9);">
-        <h2 class="lwx-detail-title">Apex Roofing</h2>
-        <span class="lwx-status lwx-status--critical"><span class="lwx-status__dot" aria-hidden="true"></span>Critical</span>
-      </div>
-
-      <!-- Main alert -->
-      <div class="lwx-alert">
-        <div class="lwx-alert__top">
-          <span class="lwx-alert__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M12 9v4M12 17h.01M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.7 3.86a2 2 0 0 0-3.4 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <h3 class="lwx-alert__title">Possible enquiry failure detected</h3>
-        </div>
-        <p class="lwx-alert__desc"><b>19 visitors</b> attempted to submit this form during the last 7 days, but only <b>11</b> reached the configured success state. <b>8 submission attempts</b> may have failed.</p>
-
-        <div class="lwx-alert__action">
-          <p class="lwx-alert__action-label">Suggested action</p>
-          <p class="lwx-alert__action-text">Test the contact form on mobile and desktop and check that successful submissions are reaching the intended destination.</p>
+      <div class="problem__flows">
+        <div class="problem-flow">
+          <h3 class="problem-flow__title">On the website</h3>
+          <div class="timeline timeline--problem">
+            <div class="timeline__row"><span class="timeline__dot"></span><span class="timeline__text">Someone clicks</span></div>
+            <div class="timeline__row"><span class="timeline__dot"></span><span class="timeline__text">Visits the website</span></div>
+            <div class="timeline__row"><span class="timeline__dot"></span><span class="timeline__text">Gets confused or distracted</span></div>
+            <div class="timeline__row"><span class="timeline__dot"></span><span class="timeline__text">Leaves</span></div>
+            <div class="timeline__row timeline__row--end"><span class="timeline__dot timeline__dot--end"></span><span class="timeline__text timeline__text--end">Never returns</span></div>
+          </div>
         </div>
 
-        <span class="lwx-confidence">Strong signal</span>
-      </div>
-
-      <!-- Conversion journey -->
-      <h3 class="section-title" style="text-align:center; margin-left:auto; margin-right:auto; font-size: clamp(20px, 2.6vw, 26px);">Conversion journey — last 7 days</h3>
-      <div class="lwx-journey">
-        <div class="lwx-journey__step">
-          <span class="lwx-journey__num">147</span>
-          <span class="lwx-journey__label">Visitors</span>
-        </div>
-        <div class="lwx-journey__step">
-          <span class="lwx-journey__num">92</span>
-          <span class="lwx-journey__label">Primary CTA Views</span>
-        </div>
-        <div class="lwx-journey__step">
-          <span class="lwx-journey__num">38</span>
-          <span class="lwx-journey__label">CTA Clicks</span>
-        </div>
-        <div class="lwx-journey__step">
-          <span class="lwx-journey__num">24</span>
-          <span class="lwx-journey__label">Form Starts</span>
-        </div>
-        <div class="lwx-journey__step lwx-journey__step--drop">
-          <span class="lwx-journey__num">19</span>
-          <span class="lwx-journey__label">Submit Attempts</span>
-        </div>
-        <div class="lwx-journey__drop-note">↳ 8 attempts did not complete</div>
-        <div class="lwx-journey__step lwx-journey__step--final">
-          <span class="lwx-journey__num">11</span>
-          <span class="lwx-journey__label">Successful Enquiries</span>
-        </div>
-      </div>
-
-      <!-- Conversion path health -->
-      <h3 class="section-title" style="text-align:center; margin-left:auto; margin-right:auto; font-size: clamp(20px, 2.6vw, 26px);">Conversion path health</h3>
-      <div class="lwx-path">
-        <div class="lwx-path__step">
-          <span class="lwx-path__dot" aria-hidden="true"></span>
-          <span class="lwx-path__name">Landing Page</span>
-          <span class="lwx-path__state">Healthy</span>
-        </div>
-        <span class="lwx-path__line" aria-hidden="true"></span>
-        <div class="lwx-path__step">
-          <span class="lwx-path__dot" aria-hidden="true"></span>
-          <span class="lwx-path__name">Primary CTA</span>
-          <span class="lwx-path__state">Healthy</span>
-        </div>
-        <span class="lwx-path__line" aria-hidden="true"></span>
-        <div class="lwx-path__step">
-          <span class="lwx-path__dot" aria-hidden="true"></span>
-          <span class="lwx-path__name">Enquiry Form</span>
-          <span class="lwx-path__state">Healthy</span>
-        </div>
-        <span class="lwx-path__line" aria-hidden="true"></span>
-        <div class="lwx-path__step lwx-path__step--critical">
-          <span class="lwx-path__dot" aria-hidden="true"></span>
-          <span class="lwx-path__name">Submit</span>
-          <span class="lwx-path__state">Critical</span>
-        </div>
-        <span class="lwx-path__line" aria-hidden="true"></span>
-        <div class="lwx-path__step">
-          <span class="lwx-path__dot" aria-hidden="true"></span>
-          <span class="lwx-path__name">Success</span>
-          <span class="lwx-path__state">Healthy</span>
-        </div>
-      </div>
-
-      <!-- Secondary insight + monitoring -->
-      <div class="lwx-secondary-grid" style="margin-bottom: var(--space-10);">
-        <div class="lwx-mini-card">
-          <span class="lwx-mini-card__label lwx-mini-card__label--signal">Early signal</span>
-          <h4 class="lwx-mini-card__title">Mobile form friction</h4>
-          <p class="lwx-mini-card__stat">9 of 24 form starters ended their session after interacting with the phone-number field.</p>
-          <p class="lwx-mini-card__note">The sample is still small. Continue monitoring before making a major change.</p>
-        </div>
-
-        <div class="lwx-mini-card">
-          <span class="lwx-mini-card__label lwx-mini-card__label--monitor">Ongoing</span>
-          <h4 class="lwx-mini-card__title">LeadWatchX is monitoring this site</h4>
-          <p class="lwx-mini-card__stat">We'll alert you when the enquiry path shows a meaningful problem or technical failure.</p>
-          <div class="lwx-mini-card__check">
-            <span class="lwx-mini-card__check-label">Last checked</span>
-            <span class="lwx-mini-card__check-val">Just now</span>
+        <div class="problem-flow">
+          <h3 class="problem-flow__title">After the enquiry</h3>
+          <div class="timeline timeline--problem">
+            <div class="timeline__row"><span class="timeline__dot"></span><span class="timeline__text">Lead submits an enquiry</span></div>
+            <div class="timeline__row"><span class="timeline__dot"></span><span class="timeline__text">Reply is delayed</span></div>
+            <div class="timeline__row"><span class="timeline__dot"></span><span class="timeline__text">Lead loses interest</span></div>
+            <div class="timeline__row timeline__row--end"><span class="timeline__dot timeline__dot--end"></span><span class="timeline__text timeline__text--end">Opportunity is lost</span></div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
+  <!-- ==========================================================
+       3. WHAT I BUILD — four equal cards, the full system
+       ========================================================== -->
+  <section class="build" id="build">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__index">02</span>
+        <p class="eyebrow">What I Build</p>
+      </div>
+      <h2 class="section-title">Conversion systems, not just pages</h2>
+      <p class="build__intro">Four parts working together to close both gaps above — not a one-off design project.</p>
+
+      <div class="bento bento--build">
+        <div class="bento-card">
+          <div class="bento-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <span class="bento-card__num">01</span>
+          <h3 class="bento-card__title">Capture</h3>
+          <p class="bento-card__desc">Focused landing pages designed around one offer and one clear action.</p>
+          <div class="bento-card__outcome"><span class="bento-card__outcome-dot" aria-hidden="true"></span>Higher-quality visitors take action.</div>
+        </div>
+
+        <div class="bento-card">
+          <div class="bento-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16l-6.5 7.2V18l-3 1.8v-7.6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="bento-card__num">02</span>
+          <h3 class="bento-card__title">Qualify</h3>
+          <p class="bento-card__desc">Forms that ask the right questions and separate strong prospects from poor-fit enquiries.</p>
+          <div class="bento-card__outcome"><span class="bento-card__outcome-dot" aria-hidden="true"></span>Less time wasted on unsuitable leads.</div>
+        </div>
+
+        <div class="bento-card">
+          <div class="bento-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4v6h6M20 20v-6h-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 15a7 7 0 0 0 12.9 3M19 9A7 7 0 0 0 6.1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <span class="bento-card__num">03</span>
+          <h3 class="bento-card__title">Follow Up</h3>
+          <p class="bento-card__desc">Automated confirmations, reminders and follow-up messages that respond while interest is high.</p>
+          <div class="bento-card__outcome"><span class="bento-card__outcome-dot" aria-hidden="true"></span>No valuable enquiry gets forgotten.</div>
+        </div>
+
+        <div class="bento-card">
+          <div class="bento-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="11" width="16" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="17" width="10" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <span class="bento-card__num">04</span>
+          <h3 class="bento-card__title">Organise</h3>
+          <p class="bento-card__desc">Every lead is routed into a clear system with the relevant details, source and status.</p>
+          <div class="bento-card__outcome"><span class="bento-card__outcome-dot" aria-hidden="true"></span>A cleaner sales process from enquiry to client.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       4. FEATURED PROJECT — GRANT CHIASSON (only project shown)
+       ========================================================== -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__index">03</span>
+        <p class="eyebrow">Featured Project</p>
+      </div>
+      <h2 class="section-title">Grant Chiasson — Coaching Landing Page</h2>
+
+      <article class="project">
+        <div class="project__media">
+          <div class="project__glow" aria-hidden="true"></div>
+          <div class="mockup mockup--browser">
+            <div class="mockup__bar">
+              <span></span><span></span><span></span>
+              <div class="mockup__url">grantchiasson.carrd.co</div>
+            </div>
+            <div class="mockup__screen">
+              <img
+  src="./grant-screenshot.jpg"
+  alt="Grant Chiasson mental performance coaching landing page"
+  loading="lazy"
+  onerror="this.style.display='none'; this.parentElement.classList.add('mockup__screen--empty');"
+/>
+              <span class="mockup__placeholder-label">Preview unavailable</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__content">
+          <p class="project__tag">Real Client Project · Mental Performance Coaching</p>
+
+          <ul class="tag-list project__meta">
+            <li class="tag">Coaching landing page</li>
+            <li class="tag">Mobile responsive</li>
+            <li class="tag">Clear application journey</li>
+            <li class="tag">Resource hub</li>
+          </ul>
+
+          <div class="project__block">
+            <h3 class="project__label">The problem</h3>
+            <p class="project__desc">Grant needed one clear online destination for his coaching offer, resources and application path.</p>
+          </div>
+
+          <div class="project__block">
+            <h3 class="project__label">What I built</h3>
+            <p class="project__desc">A focused coaching landing page that brought his positioning, coaching CTA and resources into one professional experience.</p>
+          </div>
+
+          <div class="project__block">
+            <h3 class="project__label">The result</h3>
+            <p class="project__desc">A clearer and more professional home for his coaching brand.</p>
+          </div>
+
+          <!-- REPLACE: update href with the current live project link if it changes -->
+          <a href="https://grantchiasson.carrd.co/" target="_blank" rel="noopener" class="link-arrow">View live site <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <!-- TESTIMONIAL — Grant Chiasson -->
+      <div class="testimonial">
+        <svg class="testimonial__mark" viewBox="0 0 32 24" aria-hidden="true"><path d="M0 24V13.8C0 5.4 4.9 0 12.8 0v5.4C8.4 5.4 6 8 6 13h6.8V24H0zm18 0V13.8C18 5.4 22.9 0 30.8 0v5.4C26.4 5.4 24 8 24 13h6.8V24H18z"/></svg>
+        <!-- REPLACE: update quote / name / role if the testimonial changes -->
+        <blockquote class="testimonial__quote">
+          “Will is first class all the way around. I told him exactly what I needed, and when I needed it — I didn't give him much time, but he got the job done quickly with little to no friction. Highly recommend working with Will.”
+        </blockquote>
+        <div class="testimonial__byline">
+          <span class="testimonial__avatar" aria-hidden="true">GC</span>
+          <p class="testimonial__author">Grant Chiasson <span>Mental Performance Coach</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       5. SYSTEM DEMONSTRATIONS
+       Illustrative examples of the automation side of the work,
+       followed as one example enquiry (Sarah) through each stage.
+       Not paid client projects — clearly labeled throughout.
+       ========================================================== -->
+  <section class="demos" id="demos">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__index">04</span>
+        <p class="eyebrow">System Demonstrations</p>
+      </div>
+      <h2 class="section-title">How the systems work</h2>
+      <p class="demos__intro">A look at the systems working behind the page — from lead qualification and routing to automated follow-up and CRM management.</p>
+      <p class="demos__note">The example below follows one illustrative enquiry — Sarah — through each stage of the system.</p>
+
+      <div class="bento bento--demos">
+        <div class="demo-card">
+          <span class="demo-card__label">Example Lead Journey</span>
+          <h3 class="demo-card__title">Qualification form flow</h3>
+          <div class="timeline timeline--demo">
+            <div class="timeline__row"><span class="timeline__dot"></span><span class="timeline__text">Sarah submits the form</span></div>
+            <div class="timeline__row"><span class="timeline__dot"></span><span class="timeline__text">Answers qualifying questions</span></div>
+          </div>
+          <div class="routing" aria-label="Routing outcome">
+            <span class="routing__line" aria-hidden="true"></span>
+            <span class="routing__pill routing__pill--solid">Good fit</span>
+            <span class="routing__pill">Not ready yet</span>
+          </div>
+        </div>
+
+        <div class="demo-card">
+          <span class="demo-card__label">Workflow Demonstration</span>
+          <h3 class="demo-card__title">Automated enquiry response</h3>
+          <div class="timeline timeline--demo timeline--log">
+            <div class="timeline__row"><span class="timeline__dot"></span><span class="timeline__text">Sarah's enquiry received</span><span class="timeline__time">00:00</span></div>
+            <div class="timeline__row"><span class="timeline__dot"></span><span class="timeline__text">Instant confirmation sent</span><span class="timeline__time">00:02</span></div>
+            <div class="timeline__row timeline__row--accent"><span class="timeline__dot timeline__dot--accent"></span><span class="timeline__text timeline__text--accent">Business notified</span><span class="timeline__time">00:04</span></div>
+          </div>
+        </div>
+
+        <div class="demo-card demo-card--terminal">
+          <span class="demo-card__label">Example System</span>
+          <h3 class="demo-card__title">Lead logged automatically</h3>
+          <div class="demo-table" aria-label="Example CRM record">
+            <div class="demo-table__chrome"><span></span><span></span><span></span><div class="demo-table__url">crm/leads</div></div>
+            <div class="demo-table__row demo-table__row--head">
+              <span>Name</span><span>Status</span><span>Source</span><span>Received</span>
+            </div>
+            <div class="demo-table__row">
+              <span>Sarah T.</span><span class="demo-table__pill demo-table__pill--solid">Qualified</span><span>Landing Page</span><span>Just now</span>
+            </div>
+            <div class="demo-table__row">
+              <span>Example Lead</span><span class="demo-table__pill">New</span><span>Landing Page</span><span>6m ago</span>
+            </div>
+          </div>
+          <p class="demo-card__caption">Illustrative example — not real client data.</p>
+        </div>
+
+        <div class="demo-card">
+          <span class="demo-card__label">Example Lead Journey</span>
+          <h3 class="demo-card__title">Follow-up sequence</h3>
+          <div class="timeline timeline--demo timeline--days">
+            <div class="timeline__row"><span class="timeline__day">D0</span><span class="timeline__text">Instant reply sent to Sarah</span></div>
+            <div class="timeline__row"><span class="timeline__day">D2</span><span class="timeline__text">Value email</span></div>
+            <div class="timeline__row"><span class="timeline__day">D5</span><span class="timeline__text">Reminder</span></div>
+            <div class="timeline__row timeline__row--accent"><span class="timeline__day timeline__day--accent" aria-hidden="true">✓</span><span class="timeline__text timeline__text--accent">Sarah books a call</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       6. BEHIND THE SYSTEM — the automation layer behind the page
+       ========================================================== -->
+  <section class="behind" id="behind">
+    <div class="container behind__inner">
+      <div class="section-head section-head--center">
+        <span class="section-head__index">05</span>
+        <p class="eyebrow">Behind The System</p>
+      </div>
+      <h2 class="section-title">What sits behind the page</h2>
+      <p class="behind__intro">A landing page is only one part of the system. Behind it, each enquiry can be qualified, acknowledged, organised and followed up automatically.</p>
+
+      <div class="system-flow" aria-label="What happens behind the landing page">
+        <div class="system-flow__step">
+          <span class="system-flow__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          <span class="system-flow__label">Landing Page</span>
+        </div>
+        <span class="system-flow__connector" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M8 2v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+
+        <div class="system-flow__step">
+          <span class="system-flow__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16l-6.5 7.2V18l-3 1.8v-7.6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <span class="system-flow__label">Qualification Form</span>
+        </div>
+        <span class="system-flow__connector" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M8 2v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+
+        <div class="system-flow__step">
+          <span class="system-flow__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4v6h6M20 20v-6h-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 15a7 7 0 0 0 12.9 3M19 9A7 7 0 0 0 6.1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          <span class="system-flow__label">Automated Response</span>
+        </div>
+        <span class="system-flow__connector" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M8 2v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+
+        <div class="system-flow__step">
+          <span class="system-flow__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="11" width="16" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="17" width="10" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/></svg></span>
+          <span class="system-flow__label">Lead Database</span>
+        </div>
+        <span class="system-flow__connector" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M8 2v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+
+        <div class="system-flow__step system-flow__step--accent">
+          <span class="system-flow__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l6 6L20 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="system-flow__label">Follow-Up Sequence</span>
+        </div>
+      </div>
+
+      <p class="behind__note">Every system is designed around the business's existing process. The goal is not to automate everything — it is to remove delays, missed enquiries and repetitive admin.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       7. HOW IT WORKS
+       ========================================================== -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__index">06</span>
+        <p class="eyebrow">How It Works</p>
+      </div>
+      <h2 class="section-title">A simple three-step process</h2>
+
+      <ol class="process__list">
+        <li class="process__item">
+          <span class="process__num">01</span>
+          <h3>Free Conversion Breakdown</h3>
+          <p>I review the current website and enquiry journey and identify where leads may be dropping off.</p>
+        </li>
+        <li class="process__item">
+          <span class="process__num">02</span>
+          <h3>Recommended Solution</h3>
+          <p>I explain what should be improved and provide a fixed project price.</p>
+        </li>
+        <li class="process__item">
+          <span class="process__num">03</span>
+          <h3>Build and Launch</h3>
+          <p>I build the agreed landing page, qualification flow and follow-up system.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       8. ABOUT — two-column: copy + a builder profile card
+       ========================================================== -->
+  <section class="about" id="about">
+    <div class="container about__grid">
+      <div class="about__inner">
+        <div class="section-head">
+          <span class="section-head__index">07</span>
+          <p class="eyebrow">About</p>
+        </div>
+        <h2 class="section-title">Hi, I'm Will.</h2>
+        <p class="about__text">I build focused landing pages and automated systems that help coaching businesses turn more online interest into qualified enquiries.</p>
+        <p class="about__text">My background in manufacturing engineering shaped how I approach projects: understand the process, identify where value is being lost and build a simpler system around it.</p>
+        <p class="about__text">I care less about adding unnecessary complexity and more about creating a clear journey from first click to follow-up.</p>
+
+        <ul class="tag-list about__tags">
+          <li class="tag">Landing Pages</li>
+          <li class="tag">Lead Qualification</li>
+          <li class="tag">Automated Follow-Up</li>
+          <li class="tag">Airtable</li>
+          <li class="tag">n8n</li>
+          <li class="tag">Conversion Journeys</li>
+        </ul>
+
+        <p class="about__location">Based in the UK. Working with coaching businesses remotely.</p>
+      </div>
+
+      <div class="about__card">
+        <div class="about__card-glow" aria-hidden="true"></div>
+        <div class="about__portrait">
+          <img src="./willportrait.jpg" alt="Will Hughes" loading="lazy">
+        </div>
+        <p class="about__card-name">Will Hughes</p>
+        <p class="about__card-role">Landing Pages &amp; Conversion Systems</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       9. FINAL CTA / ENQUIRY FORM
+       Netlify Forms — deploy as-is on Netlify and this will work.
+       ========================================================== -->
+  <section class="contact" id="contact">
+    <div class="contact__bg" aria-hidden="true"></div>
+    <div class="container contact__inner">
+      <div class="section-head section-head--center">
+        <span class="section-head__index">08</span>
+        <p class="eyebrow">Get In Touch</p>
+      </div>
+      <h2 class="section-title">Wondering Where Your Funnel Is Leaking?</h2>
+      <p class="contact__sub">I'll review your current website and enquiry journey and send you a personalised breakdown of the most important improvements I would make.</p>
+
+      <ul class="contact__reassurance">
+        <li>No obligation</li>
+        <li>No sales call required</li>
+        <li>Practical, personalised feedback</li>
+      </ul>
+
+      <div class="contact__card">
+        <form
+          name="enquiry"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/thank-you.html"
+          class="contact__form"
+          id="enquiry-form">
+
+          <input type="hidden" name="form-name" value="enquiry">
+          <p class="hidden-field">
+            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+          </p>
+
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-row">
+            <label for="website">Current website URL</label>
+            <input type="text" id="website" name="website" placeholder="e.g. yourcoachingsite.com">
+          </div>
+
+          <div class="form-row">
+            <label for="business-type">What best describes you?</label>
+            <select id="business-type" name="business-type">
+              <option value="Coaching Business">Coaching Business</option>
+              <option value="Creator">Creator</option>
+              <option value="Local Service Business">Local Service Business</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Tell me about your current website and enquiry process</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--wide"><span>Get My Free Conversion Breakdown</span></button>
+          <p class="contact__form-note">I'll personally review your current website and enquiry journey and send a focused breakdown within 48 hours.</p>
+        </form>
+      </div>
     </div>
   </section>
 
 </main>
 
+<!-- ==========================================================
+     10. FOOTER
+     ========================================================== -->
 <footer class="footer">
   <div class="container footer__inner">
-    <a href="#top" class="nav__logo">LeadWatch<span class="nav__logo-accent">X</span></a>
+    <a href="#top" class="nav__logo">WILLHUGHES<span class="nav__logo-accent">X</span></a>
+
     <nav class="footer__nav">
-      <a href="../index.html">WillHughesX</a>
-      <a href="#top" data-lwx-nav="overview">Overview</a>
-      <a href="#sites" data-lwx-nav="overview">Sites</a>
-      <a href="#view-detail" data-lwx-open="apex">Alerts</a>
+      <a href="#work">Work</a>
+      <a href="#build">What I Build</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <p class="footer__copy">© <span id="year"></span> WillHughesX. LeadWatchX is a product mockup — demo data only.</p>
+
+    <div class="footer__links">
+      <!-- REPLACE: swap in your real email address if different -->
+      <a href="mailto:willhughes.eng@gmail.com">willhughes.eng@gmail.com</a>
+    </div>
+
+    <!-- REPLACE: add/remove social links as needed -->
+    <div class="footer__socials">
+      <a <a href="https://x.com/WillHughesx" target="_blank" rel="noopener noreferrer">X</a>
+    </div>
+
+    <p class="footer__copy">© <span id="year"></span> WillHughesX. All rights reserved.</p>
   </div>
 </footer>
 
-<script src="../script.js"></script>
-<script src="leadwatchx.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
