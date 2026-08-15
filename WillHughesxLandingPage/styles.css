@@ -373,6 +373,16 @@ main, header, footer { position: relative; z-index: 2; }
   border-radius: 2px;
   transition: transform var(--transition-fast), opacity var(--transition-fast);
 }
+/* Hamburger <-> close (X) animation, driven by the aria-expanded
+   state script.js already sets — no extra JS needed. */
+.nav__toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav__toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav__toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Links that only appear in the mobile slide-down menu (e.g. a
+   Contact shortcut, or a "back to site" link on product pages)
+   and stay hidden in the normal desktop nav row. */
+.nav__link--mobile-only { display: none; }
 
 /* ==========================================================
    HERO
@@ -1455,13 +1465,8 @@ main, header, footer { position: relative; z-index: 2; }
   }
   .nav__links.is-open { transform: translateY(0); }
   .nav__links a { padding: var(--space-4) 0; border-bottom: 1px solid var(--color-border); border-radius: 0; }
-   .nav__links a.nav__link--product {
-  display: inline-flex;
-  width: fit-content;
-  margin: var(--space-4) 0 var(--space-2);
-  padding: 9px 16px;
-  border-bottom: 1px solid var(--color-accent-border);
-}
+  .nav__link--mobile-only { display: block; }
+  .nav__links a.nav__link--product { display: none; }
   .nav__toggle { display: flex; }
   .nav__actions .btn--small { display: none; }
   .bento--build { grid-template-columns: 1fr; }
