@@ -1466,7 +1466,13 @@ main, header, footer { position: relative; z-index: 2; }
   .nav__links.is-open { transform: translateY(0); }
   .nav__links a { padding: var(--space-4) 0; border-bottom: 1px solid var(--color-border); border-radius: 0; }
   .nav__link--mobile-only { display: block; }
-  .nav__links a.nav__link--product { display: none; }
+  .nav__links a.nav__link--product {
+    display: inline-flex;
+    width: fit-content;
+    margin: var(--space-4) 0 var(--space-2);
+    padding: 9px 16px;
+    border-bottom: 1px solid var(--color-accent-border);
+  }
   .nav__toggle { display: flex; }
   .nav__actions .btn--small { display: none; }
   .bento--build { grid-template-columns: 1fr; }
